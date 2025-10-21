@@ -11,6 +11,10 @@ The user defines the scale of the resolution shift. The code was tested
 primarily for downgrading resolution. In this case the "interpolation order"
 was shown to be irrelevant.
 
+The "+1" addition to the CRPIX and NAXIS are padding. This is relevant only
+for extremely low-res images where a small number of pixels would otherwise
+not cover the original image completely.
+ 
 The folder where the code is located should contain an "Input", "Output" and
 "log" folders. Within the "Input" folder there should be a "Galaxy_Images_VLA"
 folder (the name can be modified in the code) in which there should be a separate
